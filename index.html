@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Scheduler</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1><i class="fa fa-train fa-lg" aria-hidden="true"></i> Train Scheduler</h1>
+      </div><!-- jumbotron -->
+      <div class="panel panel-success">
+  <!-- Default panel contents -->
+          <div class="panel-heading">
+            <h3 class="panel-title">Current Train Schedule</h3>
+          </div>
+          <div class="panel-body">
+            <p>...</p>
+          </div>
+
+      <!-- Table -->
+          <table class="table">
+
+          </table>
+    </div><!--first panel -->
+
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Add Train</h3>
+      </div><!-- penel-heading -->
+      <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Train Name</label>
+            <input type="text" class="form-control" id="name" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Destination</label>
+            <input type="text" class="form-control" id="destination" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="time" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Frequency (mins)</label>
+            <input type="text" class="form-control" id="freq" placeholder="">
+          </div>
+           <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div><!-- panel-body -->
+    </div><!-- second panel -->
+    </div><!-- container -->
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src ="assets/javascript/app.js"></script>
+</body>
+</html>
