@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Train Scheduler</title>
   <link rel="stylesheet" href="assets/css/reset.css">
-	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -22,13 +21,23 @@
             <h3 class="panel-title">Current Train Schedule</h3>
           </div>
           <div class="panel-body">
-            <p>...</p>
-          </div>
 
       <!-- Table -->
-          <table class="table">
+          <table id = "display" class="table table-hover">
+            <thead>
+              <tr>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody>
 
+            </tbody>
           </table>
+        </div><!-- first panel body -->
     </div><!--first panel -->
 
     <div class="panel panel-success">
@@ -47,13 +56,13 @@
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
-            <input type="text" class="form-control" id="time" placeholder="">
+            <input type="text" class="form-control" id="firstTrain" placeholder="">
           </div>
           <div class="form-group">
             <label for="formGroupExampleInput2">Frequency (mins)</label>
             <input type="text" class="form-control" id="freq" placeholder="">
           </div>
-           <button type="submit" class="btn btn-success">Submit</button>
+           <button id="addUser" type="submit" class="btn btn-success">Submit</button>
         </form>
       </div><!-- panel-body -->
     </div><!-- second panel -->
@@ -63,10 +72,11 @@
 
 
 
-
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script src ="assets/javascript/app.js"></script>
 </body>
 </html>

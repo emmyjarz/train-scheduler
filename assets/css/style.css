@@ -2,3 +2,6 @@
   background-color: #DFF0D8;
   text-align: center;
 }
+th {
+  font-weight: bold;
+}
